@@ -22,8 +22,6 @@ fs = cgi.FieldStorage()
 cmd = fs.getvalue("commands")
 name = fs.getvalue("name") 
 replica = fs.getvalue("replica")
-deployment= fs.getvalue("deployment")
-image= fs.getvalue("image")
 port = fs.getvalue("port")
 
 #cmd = input("enter req...")
