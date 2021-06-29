@@ -46,7 +46,7 @@ elif("all" in cmd) and ("deployments" in cmd):
     print("</body>")
 
 
-elif(("create" in cmd) or ("launch" in cmd ) and ("pod" in cmd ):
+elif(("create" in cmd) or ("launch" in cmd ) and ("pod" in cmd )):
     output = sb.getoutput("kubectl run {} --image=centos:latest --kubeconfig admin.conf".format(name))
     print("<body style='padding: 40px;'>")
     print('<h1 style="color:#df405a;" >Output</h1>')
